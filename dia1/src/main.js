@@ -9,8 +9,15 @@ document.querySelector('[data-js="app"]').innerHTML = `
 
 ja adianto que o AdjacentHTML eu ja tinha conhecido esta semana n curso de JavaScript para React do Marco Bruno que estou acompanhando : */
 
-
+const $app = document.querySelector('[data-js="app"]');
 const $mensagem = `<h1>B. Academy</h1>
 <p>Boas vindas à semana de pré-work para o Bootcamp em React.js 😁</p>
 `
-document.querySelector('[data-js="app"]').insertAdjacentHTML("beforeend", $mensagem);
+$app.insertAdjacentHTML("beforeend", $mensagem);
+
+const $link = document.querySelector('[data-js="link"]');
+$link.addEventListener('click', () => {
+  $app.classList.toggle("esconder")
+  console.log($app)
+
+})
