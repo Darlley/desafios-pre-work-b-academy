@@ -34,5 +34,5 @@ export const jane = {
  * console.log('Jane:', jane.hobbies)
  */
 
-console.log('John:', john.hobbies)
-console.log('Jane:', jane.hobbies)
+console.log('John:', john)
+console.log('Jane:', jane)
