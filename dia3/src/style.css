@@ -1,8 +1,68 @@
-#app {
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: cornflowerblue;
 }
+form{
+  background-color: white;
+  padding: 40px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+fieldset{
+  border: 2px solid #00000020;
+
+}
+legend{
+  padding: 0 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00000093;
+}
+label{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #00000093;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+label p{
+  padding: 0 20px 0 0;
+  margin: 0;
+  display: inline-block;
+}
+input{
+  min-width: 200px;
+  border: 1px solid #00000020;
+  margin: 10px 20px 10px 0;
+  padding: 5px;
+  outline: none;
+}
+input[type="text"]:focus{
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: cornflowerblue;
+}
+button{
+  padding: 5px;
+  border: 1px solid #00000020;
+  margin-top: 2px;
+  background-color: transparent;
+}
+button:hover{
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+
