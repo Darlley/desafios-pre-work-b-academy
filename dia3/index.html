@@ -10,14 +10,29 @@
 
     <form action="" data-js="formulario">
       <fieldset>
+
         <legend>Formulário</legend>
         <label>
           <p>Nome:</p>
           <input type="text" placeholder="Escreva seu nome" data-js="form-nome">
           <button type="submit" data-js="btn">Enviar</button>
         </label>
+
+        <select name="select" multiple data-js="lang-select">
+          <option value="azul">Azul</option>
+          <option value="vermelho">Vermelho</option>
+          <option value="amarelo">Amarelo</option>
+          <option value="branco">Branco</option>
+          <option value="preto">Preto</option>
+        </select>
+
       </fieldset>
+
     </form>
+    <section class="container-colors" >
+      <div class="colors" data-js="select-colors"></div>
+    </section>
+
 
     <script type="module" src="/src/main.js"></script>
   </body>

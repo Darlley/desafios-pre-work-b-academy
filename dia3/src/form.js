@@ -42,3 +42,51 @@ valor.addEventListener('input', (event) => {
   event.target.value = letter
 
 })
+
+// SEGUNDO EXERCÍCIO
+
+const colors = document.querySelector('[data-js="select-colors"]')
+const select = document.querySelector('[data-js="lang-select"]')
+
+select.addEventListener('change', (event) => {
+  console.dir(event.target.selectedIndex)
+
+  const elementos = [...event.target.selectedOptions].map(el => el.value)
+
+  const div = document.createElement('div')
+  div.classList.add('div-select')
+  div.setAttribute('data-js', 'div-select')
+
+
+  for(let value in elementos){
+    div.classList.toggle(`div-select-${elementos[value]}`)
+    console.log(typeof elementos[value], value, elementos)
+  }
+  colors.appendChild(div)
+
+  //const countdivs = document.querySelectorAll('[data-js="div-select"]')
+  //console.log('DIV-SELECT', countdivs)
+
+  /* PRIMEIRA SOLUÇÃO
+  if(elementos.length > 0){
+
+    const div = document.createElement('div')
+    div.classList.toggle('div-select')
+
+    for(let i=0; i<elementos.length; i++){
+
+      if(elementos[i] == 'azul'){
+
+      }else if(elementos[i] == 'vermelho'){
+        div.classList.toggle('div-select-red')
+      }if(elementos[i] == 'amarelo'){
+        div.classList.toggle('div-select-yellow')
+      }if(elementos[i] == 'preto'){
+        div.classList.toggle('div-select-black')
+      }if(elementos[i] == 'branco'){
+        div.classList.toggle('div-select-white')
+      }
+    }
+  }*/
+
+})
