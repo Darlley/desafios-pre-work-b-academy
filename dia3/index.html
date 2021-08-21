@@ -9,30 +9,60 @@
   <body>
 
     <form action="" data-js="formulario">
-      <fieldset>
 
-        <legend>Formulário</legend>
+      <fieldset>
+        <legend>Formulário - cadastrar carro</legend>
         <label>
-          <p>Nome:</p>
-          <input type="text" placeholder="Escreva seu nome" data-js="form-nome">
-          <button type="submit" data-js="btn">Enviar</button>
+          <p>Imagem (URL)</p>
+          <input type="url" name="" id="" data-img>
         </label>
 
-        <select name="select" multiple data-js="lang-select">
-          <option value="azul">Azul</option>
-          <option value="vermelho">Vermelho</option>
-          <option value="amarelo">Amarelo</option>
-          <option value="branco">Branco</option>
-          <option value="preto">Preto</option>
-        </select>
+        <label for="">
+          <p>Marca / Modelo</p>
+          <input type="text">
+        </label>
 
+        <label for="">
+          <p>Ano</p>
+          <input type="text">
+        </label>
+
+        <label for="">
+          <p>Placa</p>
+          <input type="text">
+        </label>
+
+        <label for="">
+          <p>Cor</p>
+          <input type="color">
+        </label>
+
+        <button type="submit" data-js="btn">Enviar</button>
       </fieldset>
 
     </form>
-    <section class="container-colors" >
-      <div class="colors" data-js="select-colors"></div>
-    </section>
 
+    <section class="table-car">
+      <table>
+        <thead>
+          <tr>
+            <th>Imagem</th>
+            <th>Marca</th>
+            <th>Ano</th>
+            <th>Placa</th>
+            <th>Cor</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td rowspan="2">Fim da lista</td>
+          </tr>
+        </tfoot>
+        <tbody data-js="info-car">
+
+        </tbody>
+      </table>
+    </section>
 
     <script type="module" src="/src/main.js"></script>
   </body>
